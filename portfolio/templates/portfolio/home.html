@@ -1,10 +1,33 @@
-<h1>Vedran's Portfolio</h1>
+<h1><center>Vedran's Portfolio</center></h1>
+
+<a href="{% url 'blog:all_blogs'}">Blog</a>
+<br>
+<a href="% static 'portfolio/Vedran Olujic_ CV.pdf' %">CV</a>
+<br>
 
 {% load static %}
 
-<a href="% static 'portfolio/Vedran Olujic_ CV.pdf' %">CV</a>
 
-<img src="{% static 'portfolio/CROP.jpeg' %}">
+<div class="row justify-content-center my-3">
+  <div class="col-5">
+    <img src="{% static 'portfolio/CROP.jpeg' %}" style="width:50%;">
+  </div>
+</div>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+
+
 
 {%for project in projects%}
 
