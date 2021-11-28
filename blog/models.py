@@ -6,3 +6,6 @@ class Blog (models.Model):
     description = models.TextField()
     #look up field reference for functions on model
     date = models.DateField()
+
+    def __str__(self):
+        return self.title
